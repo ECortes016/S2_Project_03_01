@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* @font-face would tell the browser to use some of the fonts listed within the font family */
+@font-face {
+    font-family: The Champagne;
+    src: url(cac_champagne.ttf) url(cac_champagne.woff);
+    font-family: The Grunge;
+    src: url(1942.ttf) url(1942.woff);
+    font-family: The Dobkin;
+    src: url(DobkinPlain.ttf) url(DobkinPlain.woff);
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Emmanuel Cortes Castaneda
+   Date: 09/06/18  
+   
+   Filename: ph_styles.css
+
+*/
+/* Structural Styles */
+/* This would give a basic background color to the html piece of the page */
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+header {
+    background-color: black;
+}
+
+p {
+    margin: 0px;
+    padding: 5px 25px 25px 25px;
+}
+
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+}
+
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4)
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.7);
+}
+
+/* Section Styles */
+section.paybill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px 0px 10px 20px;
+}
+
+section.play1 {}
+
+section.play2 {}
+
+section.play3 {}
+
+section.play4 {}
+
+/* Description List Styles */
