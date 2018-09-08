@@ -1,13 +1,19 @@
 @charset "utf-8";
 
-/* @font-face would tell the browser to use some of the fonts listed within the font family */
+/*  */
 @font-face {
-    font-family: The Champagne;
-    src: url(cac_champagne.ttf) url(cac_champagne.woff);
-    font-family: The Grunge;
-    src: url(1942.ttf) url(1942.woff);
-    font-family: The Dobkin;
-    src: url(DobkinPlain.ttf) url(DobkinPlain.woff);
+    font-family: Champagne;
+    src: url('cac_champagne.ttf') format('truetype'), url('cac_champagne.woff') format('woff');
+}
+
+@font-face {
+    font-family: Grunge;
+    src: url('1942.ttf') format('truetype'), url('1942.woff') format('woff');
+}
+
+@font-face {
+    font-family: Dobkin;
+    src: url('DobkinPlain.ttf') format('truetype'), url('DobkinPlain.woff') format('woff');
 }
 
 /*
@@ -23,7 +29,7 @@
 
 */
 /* Structural Styles */
-/* This would give a basic background color to the html piece of the page */
+/* Added some basic color to some of the major elements. Aswell as a specific font for the body. Added margins to the paragraphs aswell as padding. The address text was also given some padding at the top and bottom, the text was centered also. */
 html {
     background-color: hsl(91, 8%, 56%);
 }
@@ -44,7 +50,7 @@ p {
 
 body>p {
     font-size: 1.1em;
-    text-align: center;
+    text-align: center
 }
 
 address {
@@ -56,6 +62,7 @@ address {
 }
 
 /* Navigation Styles */
+/* Once you have clicked a link then the color will not change to a different one, nor will ever stay that way forever. Also while hovering over the links, the background will change to make it apparent. The nav will also only use certain fonts. */
 nav {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
 }
@@ -64,7 +71,9 @@ nav>ul>li>a:link,
 nav>ul>li>a:visited {
     color: white;
     text-decoration: none;
-    background-color: hsla(0, 0%, 42%, 0.4)
+    background-color: hsla(0, 0%, 42%, 0.4);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav>ul>li>a:hover,
@@ -74,19 +83,56 @@ nav>ul>li>a:active {
 }
 
 /* Section Styles */
-section.paybill h1 {
+/* To  */
+section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
     margin: 0px;
     padding: 20px 0px 10px 20px;
 }
 
-section.play1 {}
+section#play1.playbill {
+    background-color: hsl(240, 100%, 88%);
+}
 
-section.play2 {}
+section#play2.playbill {
+    background-color: hsl(25, 88%, 73%);
+}
 
-section.play3 {}
+section#play3.playbill {
+    background-color: hsl(0, 100%, 75%);
+}
 
-section.play4 {}
+section#play4 {
+    background-color: hsl(296, 86%, 86%);
+}
+
+section#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+section#play2 h1 {
+    font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
 
 /* Description List Styles */
+/* This let the text inside the lists become much nicer with a color set to two headings and the author in another color */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4)
+}
+
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
