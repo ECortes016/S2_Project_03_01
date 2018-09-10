@@ -124,7 +124,7 @@ section#play4 h1 {
 }
 
 /* Description List Styles */
-/* This lets the text inside the lists become much nicer with a color set to two headings and the author in another color. */
+/* This lets the text inside the lists become much nicer with a color set to two headings and the author in another color. A specific font size was also set with the font also being bold. */
 dt {
     font-size: 1.3em;
     font-weight: bold;
