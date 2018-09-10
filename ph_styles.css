@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*  */
+/* This will let the browser know what fonts to use for the page */
 @font-face {
     font-family: Champagne;
     src: url('cac_champagne.ttf') format('truetype'), url('cac_champagne.woff') format('woff');
@@ -29,7 +29,7 @@
 
 */
 /* Structural Styles */
-/* Added some basic color to some of the major elements. Aswell as a specific font for the body. Added margins to the paragraphs aswell as padding. The address text was also given some padding at the top and bottom, the text was centered also. */
+/* Added some basic color to some of the major elements. As well as specific fonts for the body. Added margins to the paragraphs aswell as padding. The address text was also given some padding at the top and bottom, the text was centered as well. */
 html {
     background-color: hsl(91, 8%, 56%);
 }
@@ -50,7 +50,7 @@ p {
 
 body>p {
     font-size: 1.1em;
-    text-align: center
+    text-align: center;
 }
 
 address {
@@ -83,7 +83,7 @@ nav>ul>li>a:active {
 }
 
 /* Section Styles */
-/* To  */
+/* This would make the different sections on the page become different from one another. There are 4 different sections and each one of them would be different colors and also different fonts for the headings.  */
 section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
@@ -124,11 +124,11 @@ section#play4 h1 {
 }
 
 /* Description List Styles */
-/* This let the text inside the lists become much nicer with a color set to two headings and the author in another color */
+/* This lets the text inside the lists become much nicer with a color set to two headings and the author in another color. */
 dt {
     font-size: 1.3em;
     font-weight: bold;
-    color: hsla(0, 0%, 0%, 0.4)
+    color: hsla(0, 0%, 0%, 0.4);
 }
 
 dd {
